@@ -50,6 +50,7 @@ def run
       play 
     else 
       puts "Invalid input. Please try again"
+    end 
   end 
     exit 
 end 
