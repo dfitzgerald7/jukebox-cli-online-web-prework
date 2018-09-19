@@ -38,16 +38,16 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
-def run 
+def run(songs)
   help 
   until user_input == "exit"
     user_input = gets.chomp 
     if user_input.downcase == "help"
       help 
     elsif user_input.downcase == "list"
-      list 
+      list(songs)
     elsif user_input.downcase == "play"
-      play 
+      play(songs)
     else 
       puts "Invalid input. Please try again"
     end 
