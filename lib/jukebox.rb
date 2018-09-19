@@ -41,6 +41,7 @@ end
 def run 
   help 
   user_input = gets.chomp 
-  
-  
+  until user_input == "exit"
+    
+  end 
 end 
