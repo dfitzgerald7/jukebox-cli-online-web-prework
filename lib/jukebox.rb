@@ -22,10 +22,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song = gets.chomp
+  binding.pry
   if songs.include?(song)
     puts "Playing #{song}"
   elsif (1..9).include?(song)
-    binding.pry
+    
     puts "Playing #{songs[song]}"
   else 
     puts "Invalid input, please try again"
