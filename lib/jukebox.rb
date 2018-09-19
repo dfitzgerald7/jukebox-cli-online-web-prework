@@ -40,8 +40,11 @@ end
 
 def run 
   help 
-  user_input = gets.chomp 
   until user_input == "exit"
-    
+    user_input = gets.chomp 
+    if user_input.downcase == "help"
+      help 
+      
+      
   end 
 end 
