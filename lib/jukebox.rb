@@ -23,9 +23,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   song = gets.chomp
   #binding.pry
-  if songs.include?(song.to_i)
+  if songs.include?(song)
     puts "Playing #{song}"
-  elsif (1..9).include?(song)
+  elsif (1..9).include?(song.to_i)
     
     puts "Playing #{songs[song]}"
   else 
