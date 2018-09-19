@@ -40,7 +40,8 @@ end
 
 def run(songs)
   help 
-  until user_input == "exit"
+  stop_loop = false 
+  until stop_loop == true
     user_input = gets.chomp 
     if user_input.downcase == "help"
       help 
@@ -48,9 +49,12 @@ def run(songs)
       list(songs)
     elsif user_input.downcase == "play"
       play(songs)
+    elsif user_input.downcase == "exit"
+      exit 
+      stop_loop = true
     else 
       puts "Invalid input. Please try again"
     end 
   end 
-    exit 
+    
 end 
