@@ -40,6 +40,7 @@ end
 
 def run 
   help 
+  user_input = gets.chomp 
   
   
 end 
