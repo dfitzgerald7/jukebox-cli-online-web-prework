@@ -23,6 +23,8 @@ def play(songs)
   song = gets.chomp
   if songs.include?(song)
     puts "Playing #{song}"
+  else 
+    
   end 
 end 
 
