@@ -44,7 +44,12 @@ def run
     user_input = gets.chomp 
     if user_input.downcase == "help"
       help 
-      
-      
+    elsif user_input.downcase == "list"
+      list 
+    elsif user_input.downcase == "play"
+      play 
+    else 
+      puts "Invalid input. Please try again"
   end 
+    exit 
 end 
